@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+font-weight: 500;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.navbar i{
+    margin-right: 5px;
+    font-size: 23px;
+}
+.navbar-links{
+    display: flex;
+column-gap: 20px; 
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1d232c;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1d232c;
+     
+}
+.navbar-togglebar{
+    display: none;
+}
+.sidebar{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: .7s ease-in-out;
+    background-color: #1d232c;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    
+}
+.side-navbar-link{
+    margin-bottom: 20px;
+}
+.side-navbar-links a{
+text-decoration: none;
+color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+gap: 50px;
+padding: 50px;
+
+}
+.header-button{
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #1d232c;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.header img{
+    width: 300px;
+
+}
+.service{
+    padding: 20px;
+}
+.service-container-1{
+    margin: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.service-container-2{
+    margin: 10px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .service-container-2 div{
+        background-color: #f2f4f7;
+        padding: 10px;
+        border-radius: 10px;
+    
+    }
+    .new-arrival img{
+        width: 300px;
+    }
+    .new h2{
+        padding-left: 30px;
+        margin: 10px;
+    }
+    .most h2{
+        padding-left: 30px;
+        margin: 10px;
+    }
+    .new-arrival{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        justify-content: space-evenly;
+    }
+    .new-arrival-container{
+        position: relative;
+        flex-basis: 20%;
+    }
+    .new-arrival button{
+     padding: 10px 10px;
+     position: absolute;
+        margin-top: 10px;
+    color: #1d232c;
+    left: 100px;
+    top: 80px;
+    border-radius: 5px;
+    border: none;
+    }
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news input{
+    padding: 10px;
+    width: 50vw;
+    border-radius: 50px;
+ margin-bottom: 5px;
+ border: solid 3px black;   
+}
+.news button{
+    padding: 10px ;
+    margin: 5px 0 10px 0 ;
+    color: #f2f4f7;
+    border-radius: 10px;
+    background-color: #1d232c;
+}
+.footer{
+    background-color: #1d232c;
+    color: #f2f4f7;
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+.footer-container-1{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+}
+.footer-icon-container i{
+margin-right: 10px;
+}
+.product-section img{
+    width: 300px;
+}
+
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 50%;
+    display: flex;
+    border: solid 3px black;
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+margin: auto;
+}  
+.product-search input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+}
+.product-search input:hover{
+ outline: none;
+}
+.products{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-box{
+    margin: 10px 0;
+    text-align: center;
+    flex-basis: 20%;
+}
+.product-box img{
+    border-radius: 10px;
+}
+
+@media screen and (max-width:700px) {
+    .navbar-togglebar{
+        display: block;
+    }
+.navbar-links a{
+    display: none;
+}
+.header-img{
+    display: none;
+}
+.service-container-1{
+    display: none;
+}
+.service-container-2{
+    flex-direction: column;
+}
+}
+
+
+
+
+
